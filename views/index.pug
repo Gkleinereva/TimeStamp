@@ -2,4 +2,13 @@ extends layout
 
 block content
   h1= title
-  p Welcome to Gkleinereva's #{title}
+  p Welcome to Gkleinereva's #{title}.  This application will extract a date from the URL provided by the client and return raw JSON containing the corresponding unix and natural language timestamp. 
+
+  h3 Example Usage
+  a(href = exURLA) #{exURLA}
+  br
+  a(href = exURLB) #{exURLB}
+  
+  h4 Output
+  p { "unix": 1450137600, "natural": "December 15, 2015" }
+
